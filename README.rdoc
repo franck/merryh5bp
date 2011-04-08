@@ -1,0 +1,37 @@
+= Merryh5bp
+
+This gem provides several default files for html5 development on rails. We use html5-boilerplate project files and make them works in a rails environment.
+
+Check html5-boilerplate for more detail on this project : http://html5boilerplate.com/
+
+  gem 'merryh5bp'
+  bundle install
+  rake merryh5bp:setup
+  
+  
+The setup rake tasks is :
+- removing javascripts protypes files
+- replacing the content of rails default layout application.html.erb by the content of index.html from html5-boilerplate. We then add several rails stuffs (csrf_meta_tag, yield in the main div, yield(:head) in the <head>, yield(:foot) at the bottom). We replace the css and js folder name of H5BP by the Rails naming style : stylesheets/ and javascripts/
+- copying H5BP css and js assets in the public directory (we keep application.js instead of script.js). 
+
+
+== JQuery
+
+H5BP try to catch the current version of jquery from Google CDN and fallback to javascripts/libs/jquery-XXX.min.js if not available. We keep it that way even to stay consistent with H5BP philosophy even if we use jquery-rails gem in our projects.
+
+What we do : 
+  gem 'jquery-rails'
+  bundle install
+  rails generate jquery:install
+  then edit application.js to replace libs/jquery-XXX.min.js by jquery.min.js
+  
+  
+== VERSION
+
+H5BP : 1.1
+jquery : 1.5.1
+
+
+  
+
+This project uses MIT-LICENSE.
