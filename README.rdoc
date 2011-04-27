@@ -11,11 +11,11 @@ Check html5-boilerplate for more detail on this project : http://html5boilerplat
   
 The setup rake tasks is :
 - removing javascripts protypes files
-- replacing the content of rails default layout application.html.erb by the content of index.html from html5-boilerplate. We then add several rails stuffs (csrf_meta_tag, yield in the main div, yield(:head) in the <head>, yield(:foot) at the bottom). We replace the css and js folder name of H5BP by the Rails naming style : stylesheets/ and javascripts/
-- copying H5BP css and js assets in the public directory (we keep application.js instead of script.js). 
+- replacing the content of rails default layout application.html.erb by the content of index.html from html5-boilerplate. Adding several rails stuffs (csrf_meta_tag, yield in the main div, yield(:head) in the <head>, yield(:foot) at the bottom). Replacing the css and js folder name of H5BP by the Rails naming style : stylesheets/ and javascripts/
+- copying H5BP css and js assets in the public directory (keeping application.js instead of script.js). 
 
 
-== JQuery
+== About JQuery
 
 H5BP try to catch the current version of jquery from Google CDN and fallback to javascripts/libs/jquery-XXX.min.js if not available. We keep it that way even to stay consistent with H5BP philosophy even if we use jquery-rails gem in our projects.
 
