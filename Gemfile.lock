@@ -113,6 +113,6 @@ PLATFORMS
 DEPENDENCIES
   capybara (>= 0.4.0)
   jquery-rails
-  rails (= 3.0.4)
+  rails (>= 3.0.4)
   rspec-rails (>= 2.0.0.beta)
   sqlite3
