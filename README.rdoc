@@ -9,10 +9,10 @@ Check html5-boilerplate for more detail on this project : http://html5boilerplat
   rake merryh5bp:setup
   
   
-The setup rake tasks is :
-- removing javascripts protypes files
-- replacing the content of rails default layout application.html.erb by the content of index.html from html5-boilerplate. Adding several rails stuffs (csrf_meta_tag, yield in the main div, yield(:head) in the <head>, yield(:foot) at the bottom). Replacing the css and js folder name of H5BP by the Rails naming style : stylesheets/ and javascripts/
-- copying H5BP css and js assets in the public directory (keeping application.js instead of script.js). 
+The setup rake task :
+- remove javascripts protypes files
+- replace the content of rails default layout application.html.erb by the content of index.html from html5-boilerplate. Add several rails stuffs (csrf_meta_tag, yield in the main div, yield(:head) in the <head>, yield(:foot) at the bottom). Replace the css and js folder name of H5BP by the Rails naming style : stylesheets/ and javascripts/
+- copy H5BP css and js assets in the public directory (keeping application.js instead of script.js). 
 
 
 == About JQuery
